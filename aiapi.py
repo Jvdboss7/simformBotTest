@@ -36,5 +36,3 @@ def generateChatResponse(prompt):
 def SaveFile():
     bot.SaveConversation(conversation_file)
     bot.ClearHistory()
-
-    # print("--------" + memory.load_memory_variables({})['chat_history'])
