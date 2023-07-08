@@ -16,8 +16,6 @@ from src.exception import CustomException
 from src.logger import logging
 from src.constants import *
 
-# openai_api_key = config.DevelopmentConfig.OPENAI_KEY
-
 class BotChain:
     def __init__(self):
         self.openai_config = OpenAIConfig()
