@@ -5,7 +5,7 @@ from src.exception import CustomException
 from src.api.chain import BotChain
 from src.constants import *
 
-conversation_file = os.path.join(CONVERSATION_DIR, CONVERSATION_FILE_NAME)
+# conversation_file = os.path.join(CONVERSATION_DIR, CONVERSATION_FILE_NAME)
 
 bot = BotChain()
 logging.info("Instance of chatbot created")
@@ -31,6 +31,3 @@ def generateChatResponse(prompt):
     except Exception as e:
         raise CustomException(e, sys)
 
-def SaveFile():
-    bot.SaveConversation(conversation_file)
-    bot.ClearHistory()

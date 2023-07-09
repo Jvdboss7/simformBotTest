@@ -31,4 +31,7 @@ You can acces the frontend in any browser with port number `8000`
  http://localhost:8000/
 
 
-sample outresponses
+### sample output response
+
+![image2](https://github.com/Jvdboss7/simformBotTest/assets/70039145/45ff7830-bb4b-44fc-bfc4-1cce519849c8)
+

@@ -70,30 +70,3 @@ class BotChain:
 
         except Exception as e:
             raise CustomException(e, sys)
-        
-    def SaveConversation(self, filepath: str)-> None:
-        """
-        This function saves the conversation in a text file
-        
-        input: filepath
-
-        Returns: None
-        """
-        try:
-
-            os.makedirs(CONVERSATION_DIR, exist_ok=True)
-            with open(filepath , 'w') as f:
-                f.writelines(self.memory.load_memory_variables({})['chat_history'])
-        
-        except Exception as e:
-            raise CustomException(e, sys)
-        
-    def ClearHistory(self) -> None:
-        '''
-        This function clear the memory of conversation chain and make way to a new chain
-        '''
-        try:
-            self.memory.clear()
-
-        except Exception as e:
-            raise CustomException(e, sys)
