@@ -5,8 +5,6 @@ Need a data sample like in `text.txt` using which it generates embeddings and sa
 
 Given the question/user form the input bot will look for the answers associated with certain keywords in the `text.txt` file and returns the relevent answer.
 
-When the conversations end bot atomatically saves the conversation in `.txt` file and deletes the history/memory of the bot and starts fresh again
-
 ## How to run?
 
 Clone this repo
